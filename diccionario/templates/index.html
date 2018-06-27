@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Diccionarior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  </head>
+  <body>
+    <h1>Mi diccionario</h1>
+    <p>Vamos a definir: {{ palabra}} </p>
+    {% for definicion in definiciones %}
+      <p>definicion: {{ definicion.definitions.0}}</p>
+    {% endfor %}
+  </body>
+</html>
